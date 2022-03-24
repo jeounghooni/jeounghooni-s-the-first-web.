@@ -53,18 +53,13 @@
 
 </head>
 <body>
-    <input type="button" id="dnbtn" value="night" onclick="
-        let button = document.querySelector('#dnbtn') ; // 이거를 this 로 바꿔도 똑같이 동작(this는 )
-        if(button.value === 'night') {
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'white'; 
-            button.value = 'daylight';
-        } else {
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black'; 
-            button.value = 'night' ;
-        }
-    ">
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white'; ">
+
+    <input type="button" value="daylight" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black'; ">
     <h1><a href="index.html"><font color="#40E0D0">夕のウェブサイト❣</font></a></h1>
 
 <strong>This</strong> is <u><b>Jeounghooni's</b> World <strong>Portforlio</strong> WEB</u>.<br>
