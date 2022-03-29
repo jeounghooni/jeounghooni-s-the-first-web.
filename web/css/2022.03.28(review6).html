@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+    <head?>
+        <style>
+            h1{
+                border-bottom:10px solid goldenrod;
+                padding:10px;
+            }
+            h1>a{
+                text-decoration: none;
+            }
+        </style>
+    </head> //'h1 a' 을 하게되면 h1태그 밑의 모든 a태그를 선택하게 되는 것이고, 'h1>a'를 하게되면 h1직계, 바로 밑의 a 태그만 선택하게됨.ㅎ
+    <body>
+        <input type ="bottom" value="dark" onclick="
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+        ">
+        <h1><a href = "index.html">WEB</a></h1>
+        <ol>
+            <li><a href = "1.html">html</a></li>
+            <li><a href = "2.html">css</a></li>
+            <li><a href = "3.html">javascript</a></li>
+            
+        </ol>
+        <h2>Welcome</h2>
+        Hello, WEB    
+    </body>
+</html>
