@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <h1>function</h1>
+        <script>
+            function abc(){
+                console.log('a');
+                console.log('b');
+                console.log('c');
+            }
+            console.log(1);
+            console.log(2);
+            abc();
+            console.log(4);
+            abc();
+            console.log(5);
+            abc();
+            console.log(6);
+            abc();
+            console.log(7);
+            console.log(8);
+        </script>
+        <h1>VAT</h1>
+        <script>
+            function 부가세계산(가격, 부가세율){ // 입력값을 받는 '가격'이란 변수 -> 매개변수, parameter/ 사용자의 명령에 따라 출력을 하는 '함수'
+                let 부가세 = 가격 * 부가세율; // 지금 이 function은 두개 기능(계산, log값 출력)/ 좋은 기능은 한개에 한기능만 작동하는것이 좋은 기능
+                // console.log(부가세);
+                return 부가세;
+            } // 함수의 생산자
+            console.log(1);
+            console.log(2);
+            console.log(부가세계산(2000,0.12)); // 함수안에 있던 console.log값을 밖으로 빼내 1코드 1기능만 작동하게끔 바뀐것
+            // 부가세계산(2000, 0.1);  // 인자, argument, 입력값. 함수의 외부에서 함수를 사용하는 사용자 // 함수의 소비자
+            
+            console.log(3);
+
+        </script>
+        
+        <h1>SUM</h1>
+        <script>
+            function sum(val1,val2){
+                return val1+val2;
+                //alert(1);
+                //alert(2); 둘다 넣어 봤자 실행이 안됨.// return 뒤의 구조가 함수의 실행값으로서 이미 실행되었기 때문에, 거기서 기능이 종료되기 때문에.
+            }
+            alert(sum(100,200)*10)
+        </script>
+    </body>
+</html>

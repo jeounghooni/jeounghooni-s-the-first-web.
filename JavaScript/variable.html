@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h1>Variable</h1>
+        <script>
+            a = 1;  // a는 변수
+            var a = 1; // 위에 것이랑 같음, 그리고 var 는 한번만 붙이면 그 밑으로는 다같이 적용
+            a = 2;
+            console.log(a);
+
+            let b = 1; // var와 let은 무슨차이? 'https://youtu.be/61iolhWgQt0' 참고 기능적으로는 같은 것이라고 기억
+            b = 2; 
+            console.log(b);
+            1 = 2; // 상수, constant
+        </script>
+
+        <script>
+            // 10000 : 가격 -> 이렇게 달아주면 의미가 생김.
+            // 0.1 : 부가가치세율
+            console.log(10000*0.1); // '0'이라는 것은 어떤 취지의 숫자? -> 저 상태로는 알 수가 없다.
+            
+            let 가격 = 10000;
+            let 부가가치세율 = 0.1;
+            let 부가가치세 = 가격*부가가치세율;
+            console.log(부가가치세);
+        </script>
+    </body>
+</html>

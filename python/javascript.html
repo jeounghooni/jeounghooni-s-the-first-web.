@@ -1,0 +1,105 @@
+<html>
+    <body>
+        <h1>Program</h1>
+        <script>
+            console.log(1);
+            console.log(2);
+            console.log(3);
+        </script>
+        <h1>Number</h1>
+        <script>
+            console.log(1);
+            console.log(1.2);
+            console.log(1+1);
+            console.log(2-1);
+            console.log(2*2);
+            console.log(6/2);
+            console.log(Math.pow(3,2));
+            console.log(Math.random());
+        </script>
+        <h1>String</h1>
+        <script>
+            console.log('Hello')
+            console.log("Hello")
+            console.log(`Hello
+            World
+            `);
+            console.log('Hello'.length)
+            console.log('Hell world'.replace('Hell','Hello'))
+        </script>
+        <h1>Array</h1>
+        <script>
+            let member = ['egoing', 'duru', 'taeho'] // 배열에 이름 붙인 것
+            console.log(member[0])
+        </script>
+        <h1>Variable</h1>
+        <script>
+            let a = 1; // 그냥 a=1 만 있는 것과 'let' a 라고 설정하는 것은 동작하는 방식이 다름.
+        </script>
+        <h1>Input</h1>
+        <script>
+            // prompt('가격?') -> 자바에서의 입력. 그 중에서도 '문자열'을 설정할 때(입력할 때) 사용.
+            가격 = prompt('가격?')
+            부가가치세 = 0.1
+            alert(가격*부가가치세)
+        </script>
+        <h1>Boolean & comparison operator</h1>
+        <script>
+            console.log(true);
+            console.log(false);
+            console.log(1===1); // true
+            console.log(1===2); // false
+            console.log(1>2); // false
+            console.log(1<2); // true
+        </script>
+        <h1>Conditional Statements</h1>
+        <script>
+            console.log(1);
+            if(true){
+                console.log(2);
+                console.log(3);
+        } // ()안에 boolean이 옴.
+        console.log(4);// true일 때:순서대로 전부 실행 // false일 때: {}안의 것은 실행 안됨.
+
+            console.log(1);
+            if(true){
+                console.log(2.1);
+                console.log(3.1);
+            } else {
+                console.log(2.2);
+                console.log(3.3);
+            } // true일때: else{}를 제외하고 나머지 부분들이 모두 실행됨./ false일때: true와 반대로 실행됨.
+            console.log(4);
+        </script>
+        <h1>JavaScript</h1>
+        <input type="button" value="login" onclick="
+            let input_id = prompt('아이디를 입력해주세요') ;
+            if(input_id === 'kasumigaoka'){
+                alert('안녕하세요')
+            } else {
+                alert('등록되지 않은 계정입니다.')
+            }
+        ">
+        <h1>Loop</h1>
+        <script>
+            member = ['utaha', 'eriri'];
+            for(let i=0; i<memeber.length; i=i+1){
+                document.write('<li>'+memeber[i]+'</li>')
+            }
+
+            member = {name:'utaha', city:'tokyo'}// {}->객체 in javascript
+        </script>
+        <h1>Function</h1>
+        <script>
+            function sum(left, right){
+                return left+right;
+            }
+            console.log(sum(10,20));
+        </script>
+        <h1>실습</h1>
+        <input type="button" value="부가세계산기" onclick="
+            let 가격 = Number(prompt('가격?')); // number가 아니라 Number가 올바른 문법임.
+            alert(가격*0.1);
+        ">
+    </body>
+</html>
